@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ponto de Encontro</title>
+    <link rel="shortcut icon" href="imgs/logo1.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-white">
+
+    <!-- Cabeçalho Azul -->
+    <header class="w-full blue-gradient-header">
+        <div class="inner-content-wrapper flex flex-col md:flex-row justify-between items-center h-auto md:h-36">
+            <div class="w-full flex justify-between items-center">
+                <div class="flex items-center space-x-2">
+                    <img class="h-20 md:h-32 w-auto" src="imgs/logo.png" alt="Logo">
+                    <h1 class="header-title text-3xl md:text-6xl font-extrabold">PONTO DE ENCONTRO</h1>
+                </div>
+                <!-- Botão Hamburger para telas pequenas -->
+                <div class="md:hidden">
+                    <button id="menu-btn">
+                    <svg width="40" height="40" viewBox="0 0 24 24" stroke="white" fill="none" stroke-width="2" stroke-linecap="round">
+                        <line x1="4" y1="6"  x2="20" y2="6" />
+                        <line x1="4" y1="12" x2="20" y2="12" />
+                        <line x1="4" y1="18" x2="20" y2="18" />
+                    </svg>
+                    </button>
+                </div>
+            </div>
+                
+            <div class="flex items-center space-x-2">
+                <a href="tornarsocio.html" class="bg-white hover:bg-gray-100 text-blue-700 font-semibold py-1.5 px-6 rounded-md text-sm whitespace-nowrap">
+                    Tornar-me sócio
+                </a>
+                <a href="login.html" class="bg-blue-900 hover:bg-blue-800 text-white font-semibold py-1.5 px-4 rounded-md text-sm border border-white whitespace-nowrap">
+                    Login
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Menu -->
+    <nav class="w-full border-t border-b border-gray-300 py-4 mb-10">
+    <div class="flex justify-center space-x-16 inner-content-wrapper">
+
+        <!-- Links desktop -->
+        <div class="hidden md:flex space-x-16">
+        <a href="index.html" class="text-black font-medium text-xl hover:border-b-2 hover:border-black pb-1 transition">Home</a>
+        <a href="jogos.html" class="text-black font-medium text-xl hover:border-b-2 hover:border-black pb-1 transition">Jogos</a>
+        <a href="eventos.html" class="text-black font-medium text-xl hover:border-b-2 hover:border-black pb-1 transition">Eventos</a>
+        <a href="clube.html" class="text-black font-bold text-xl border-b-2 border-black pb-1">O Clube</a>
+        </div>
+    </div>
+
+    <!-- Menu dropdown mobile -->
+    <div id="menu-dropdown" class="hidden md:hidden flex flex-col space-y-4 mt-0 px-4">
+        <a href="index.html" class="text-black font-medium text-xl hover:border-b-2 hover:border-black pb-1 transition">Home</a>
+        <a href="jogos.html" class="text-black font-medium text-xl hover:border-b-2 hover:border-black pb-1 transition">Jogos</a>
+        <a href="eventos.html" class="text-black font-medium text-xl hover:border-b-2 hover:border-black pb-1 transition">Eventos</a>
+        <a href="clube.html" class="text-black font-bold text-xl border-b-2 border-black pb-1">O Clube</a>
+    </div>
+    </nav>
+
+    <!-- Script para abrir/fechar menu mobile -->
+    <script src="js/menu.js"></script>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main class="flex-grow">
+        <section class="inner-content-wrapper">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <div class="text-base text-gray-700 text-justify">
+                    <p class="mb-4 text-gray-700">
+                    O <span class="font-bold">Ponto de Encontro</span> é um espaço único no centro de Coimbra, dedicado a quem gosta de jogos de tabuleiro.
+                    </p>
+                    <p class="mb-4">
+                        A nossa <span class="font-bold">missão</span> é promover o convívio, diversão e o desenvolvimento pessoal através dos jogos de tabuleiro, criando um espaço inclusivo onde pessoas de todas as idades possam aprender, jogar, partilhar experiências e descobrir novas formas de pensar e interagir.  
+                    </p>
+                    <p class="mb-4">
+                        A nossa <span class="font-bold">visão</span> é consolidar-nos como uma referência nacional para amantes de jogos de tabuleiro, reconhecido pela inovação, pela qualidade das nossas atividades e pela capacidade de unir pessoas através do espírito lúdico.
+                    </p>
+                    <p class="mb-2">
+                        Os nossos <span class="font-bold">valores</span> são:
+                    </p>
+                    <ul class="list-disc pl-6 mb-4 text-gray-700">
+                        <li><span class="font-semibold">Fair Play:</span> Incentivamos a honestidade, a ética e o respeito pelas regras em todos os jogos e atividades.</li>
+                        <li><span class="font-semibold">Diversidade:</span> Acreditamos na riqueza de perspetivas diferentes e na inclusão de pessoas de todas as idades e perfis.</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <img src="imgs/imagem_sede.jpg" alt="Ponto de Encontro" class="w-full mx-auto rounded-lg shadow-md">
+                </div>
+            </div>
+        
+            <h2 class="text-2xl font-bold mb-4">Horário de Funcionamento</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+                <div class="p-4 bg-gray-100 rounded-lg">
+                    <p class="text-sm text-gray-600">Terça a Sexta</p>
+                    <p class="text-xl font-semibold">17h00 - 00h00</p>
+                </div>
+                <div class="p-4 bg-gray-100 rounded-lg">
+                    <p class="text-sm text-gray-600">Sábados</p>
+                    <p class="text-xl font-semibold">14h00 - 01h00</p>
+                </div>
+                <div class="p-4 bg-gray-100 rounded-lg">
+                    <p class="text-sm text-gray-600">Domingos</p>
+                    <p class="text-xl font-semibold">14h00 - 20h00</p>
+                </div>
+            </div>
+
+            <h2 class="text-2xl font-bold mb-4 mt-8">Localização</h2>
+            <p class="text-gray-700 mb-4">Rua dos Dados, nº 42, Coimbra</p>
+    
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="mt-10 py-6 text-center w-full">
+        <p>E-mail: <a href="mailto:cpontodeencontro@gmail.com">cpontodeencontro@gmail.com</a></p>
+        <p>Telemóvel: 961254362</p>
+        <p>Endereço: Rua dos Dados, nº 42, Coimbra</p>
+    </footer>
+
+</body>
+</html>

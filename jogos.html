@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ponto de Encontro</title>
+    <link rel="shortcut icon" href="imgs/logo1.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-white min-h-screen flex flex-col">
+
+    <!-- Cabeçalho Azul -->
+    <header class="w-full blue-gradient-header">
+        <div class="inner-content-wrapper flex flex-col md:flex-row justify-between items-center h-auto md:h-36">
+            <div class="w-full flex justify-between items-center">
+                <div class="flex items-center space-x-2">
+                    <img class="h-20 md:h-32 w-auto" src="imgs/logo.png" alt="Logo">
+                    <h1 class="header-title text-3xl md:text-6xl font-extrabold">PONTO DE ENCONTRO</h1>
+                </div>
+                <!-- Botão Hamburger para telas pequenas -->
+                <div class="md:hidden">
+                    <button id="menu-btn">
+                    <svg width="40" height="40" viewBox="0 0 24 24" stroke="white" fill="none" stroke-width="2" stroke-linecap="round">
+                        <line x1="4" y1="6"  x2="20" y2="6" />
+                        <line x1="4" y1="12" x2="20" y2="12" />
+                        <line x1="4" y1="18" x2="20" y2="18" />
+                    </svg>
+                    </button>
+                </div>
+            </div>
+                
+            <div class="flex items-center space-x-2">
+                <a href="tornarsocio.html" class="bg-white hover:bg-gray-100 text-blue-700 font-semibold py-1.5 px-6 rounded-md text-sm whitespace-nowrap">
+                    Tornar-me sócio
+                </a>
+                <a href="login.html" class="bg-blue-900 hover:bg-blue-800 text-white font-semibold py-1.5 px-4 rounded-md text-sm border border-white whitespace-nowrap">
+                    Login
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Menu -->
+    <nav class="w-full border-t border-b border-gray-300 py-4 mb-10">
+    <div class="flex justify-center space-x-16 inner-content-wrapper">
+
+        <!-- Links desktop -->
+        <div class="hidden md:flex space-x-16">
+        <a href="index.html" class="text-black font-medium text-xl hover:border-b-2 hover:border-black pb-1 transition">Home</a>
+        <a href="jogos.html" class="text-black font-bold text-xl border-b-2 border-black pb-1">Jogos</a>
+        <a href="eventos.html" class="text-black font-medium text-xl hover:border-b-2 hover:border-black pb-1 transition">Eventos</a>
+        <a href="clube.html" class="text-black font-medium text-xl hover:border-b-2 hover:border-black pb-1 transition">O Clube</a>
+        </div>
+    </div>
+
+    <!-- Menu dropdown mobile -->
+    <div id="menu-dropdown" class="hidden md:hidden flex flex-col space-y-4 mt-0 px-4">
+        <a href="index.html" class="text-black font-medium text-xl hover:border-b-2 hover:border-black pb-1 transition">Home</a>
+        <a href="jogos.html" class="text-black font-bold text-xl border-b border-black pb-1">Jogos</a>
+        <a href="eventos.html" class="text-black font-medium text-xl hover:border-b-2 hover:border-black pb-1 transition">Eventos</a>
+        <a href="clube.html" class="text-black font-medium text-xl hover:border-b-2 hover:border-black pb-1 transition">O Clube</a>
+    </div>
+    </nav>
+
+    <!-- Script para abrir/fechar menu mobile -->
+    <script src="js/menu.js"></script>
+
+    <!-- Conteúdo principal -->
+    <main class="flex-grow max-w-6xl mx-auto px-4">
+        <h2 class="text-center text-2xl font-extrabold mb-8 border-b-2 border-black inline-block px-4">JOGOS</h2>
+
+        <!-- Grelha de Jogos -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-10 justify-items-center text-center">
+            <div class="game-card">
+                <img src="imgs/catan.jpg" alt="Catan" class="h-44 mx-auto mb-3 shadow-lg rounded transform transition hover:scale-105 cursor-pointer">
+                <p class="font-semibold text-lg">CATAN</p>
+            </div>
+            <div class="game-card">
+                <img src="imgs/domino.jpg" alt="Dominó" class="h-44 mx-auto mb-3 shadow-lg rounded transform transition hover:scale-105 cursor-pointer">
+                <p class="font-semibold text-lg">Dominó</p>
+            </div>
+            <div class="game-card">
+                <img src="imgs/damas.jpeg" alt="Damas" class="h-44 mx-auto mb-3 shadow-lg rounded transform transition hover:scale-105 cursor-pointer">
+                <p class="font-semibold text-lg">Damas</p>
+            </div>
+            <div class="game-card">
+                <img src="imgs/batalhanaval.jpg" alt="Batalha Naval" class="h-44 mx-auto mb-3 shadow-lg rounded transform transition hover:scale-105 cursor-pointer">
+                <p class="font-semibold text-lg">Batalha Naval</p>
+            </div>
+            <div class="game-card">
+                <img src="imgs/xadrez.webp" alt="Xadrez" class="h-44 mx-auto mb-3 shadow-lg rounded transform transition hover:scale-105 cursor-pointer">
+                <p class="font-semibold text-lg">Xadrez</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="mt-10 py-6 text-center w-full">
+        <p>E-mail: <a href="mailto:cpontodeencontro@gmail.com">cpontodeencontro@gmail.com</a></p>
+        <p>Telemóvel: 961254362</p>
+        <p>Endereço: Rua dos Dados, nº 42, Coimbra</p>
+    </footer>
+
+</body>
+</html>
